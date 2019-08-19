@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import SearchBox from './SearchBox';
-import RoboMaker from './RoboMaker';
+import Robot from './components/Robot';
 
 function App() {
   return (
     <div className="App">
-      <SearchBox />
-      <RoboMaker/>
+      <h1>ROBOTS</h1>
+      <Robot/>
     </div>
   );
 }

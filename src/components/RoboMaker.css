@@ -1,0 +1,25 @@
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.robot{
+    border: solid black 1px;
+    box-shadow: 4px 0px 8px 4px rgba(0, 0, 0, 0.911);
+    margin: 5px;
+    margin-bottom: 16px;
+    background-color: rgba(248, 248, 248, 0.377); 
+    transition: transform 1s;
+}
+
+.robot:hover{
+    transform: scale(1.05,1.05);
+}
+
+.text{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
