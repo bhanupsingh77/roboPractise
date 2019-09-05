@@ -7,8 +7,8 @@ const RoboMaker = (props) =>{
         <h2>Showing results for : {props.searchData}</h2>
         <div className="wrap">
         {props.dataOfUser.map((robot,i) => {
-            if (robot.name.toLowerCase().includes(props.searchData.toLowerCase())){
             return(
+            robot.name.toLowerCase().includes(props.searchData.toLowerCase()) ?
             <React.Fragment key={robot.id}>
             <div className="robot">
             <img src={`https://robohash.org/${robot.username}`} alt="loading robots"/>
@@ -16,8 +16,8 @@ const RoboMaker = (props) =>{
             <p className="text">Username: {robot.username}</p>
             </div>    
             </React.Fragment>
+            : ""
             )
-            }
         })}
         </div>
         </React.Fragment>
